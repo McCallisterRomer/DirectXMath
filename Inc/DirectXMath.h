@@ -223,6 +223,9 @@
 
 #endif // _XM_ARM_NEON_INTRINSICS_ && !_XM_NO_INTRINSICS_
 
+#include "math/Quaternion.h"
+#include "math/Vector.h"
+
 namespace DirectX
 {
 
@@ -996,6 +999,8 @@ namespace DirectX
     XMVECTOR    XM_CALLCONV     XMLoadInt3A(_In_reads_(3) const uint32_t* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadFloat3(_In_ const XMFLOAT3* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadFloat3A(_In_ const XMFLOAT3A* pSource) noexcept;
+    XMVECTOR    XM_CALLCONV     XMLoadVector3(_In_ const nc::Vector3* pSource) noexcept;
+    XMVECTOR    XM_CALLCONV     XMLoadVector3A(_In_ const nc::Vector3* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadSInt3(_In_ const XMINT3* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadUInt3(_In_ const XMUINT3* pSource) noexcept;
 
@@ -1005,6 +1010,7 @@ namespace DirectX
     XMVECTOR    XM_CALLCONV     XMLoadFloat4A(_In_ const XMFLOAT4A* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadSInt4(_In_ const XMINT4* pSource) noexcept;
     XMVECTOR    XM_CALLCONV     XMLoadUInt4(_In_ const XMUINT4* pSource) noexcept;
+    XMVECTOR    XM_CALLCONV     XMLoadQuaternion(_In_ const nc::Quaternion* pSource) noexcept;
 
     XMMATRIX    XM_CALLCONV     XMLoadFloat3x3(_In_ const XMFLOAT3X3* pSource) noexcept;
     XMMATRIX    XM_CALLCONV     XMLoadFloat4x3(_In_ const XMFLOAT4X3* pSource) noexcept;
@@ -1034,6 +1040,8 @@ namespace DirectX
     void        XM_CALLCONV     XMStoreInt3A(_Out_writes_(3) uint32_t* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreFloat3(_Out_ XMFLOAT3* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreFloat3A(_Out_ XMFLOAT3A* pDestination, _In_ FXMVECTOR V) noexcept;
+    void        XM_CALLCONV     XMStoreVector3(_Out_ nc::Vector3* pDestination, _In_ FXMVECTOR V) noexcept;
+    void        XM_CALLCONV     XMStoreVector3A(_Out_ nc::Vector3* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreSInt3(_Out_ XMINT3* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreUInt3(_Out_ XMUINT3* pDestination, _In_ FXMVECTOR V) noexcept;
 
@@ -1043,6 +1051,7 @@ namespace DirectX
     void        XM_CALLCONV     XMStoreFloat4A(_Out_ XMFLOAT4A* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreSInt4(_Out_ XMINT4* pDestination, _In_ FXMVECTOR V) noexcept;
     void        XM_CALLCONV     XMStoreUInt4(_Out_ XMUINT4* pDestination, _In_ FXMVECTOR V) noexcept;
+    void        XM_CALLCONV     XMStoreQuaternion(_Out_ nc::Quaternion* pDestination, _In_ FXMVECTOR V) noexcept;
 
     void        XM_CALLCONV     XMStoreFloat3x3(_Out_ XMFLOAT3X3* pDestination, _In_ FXMMATRIX M) noexcept;
     void        XM_CALLCONV     XMStoreFloat4x3(_Out_ XMFLOAT4X3* pDestination, _In_ FXMMATRIX M) noexcept;
