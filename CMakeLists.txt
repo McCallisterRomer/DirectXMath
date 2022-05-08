@@ -53,7 +53,7 @@ configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/.nuget/${PROJECT_NAME}
 install(EXPORT ${PROJECT_NAME}-targets
   FILE ${PROJECT_NAME}-targets.cmake
   NAMESPACE Microsoft::
-  DESTINATION cmake/)
+  DESTINATION lib/cmake/DirectXMath)
 
 install(FILES ${LIBRARY_HEADERS}
   DESTINATION include/${PROJECT_NAME})
