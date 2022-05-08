@@ -62,4 +62,4 @@ install(
   FILES
     ${PROJECT_BINARY_DIR}/cmake/${PACKAGE_NAME}-config.cmake
     ${PROJECT_BINARY_DIR}/cmake/${PACKAGE_NAME}-config-version.cmake
-  DESTINATION cmake/)
+  DESTINATION lib/cmake/DirectXMath/)
