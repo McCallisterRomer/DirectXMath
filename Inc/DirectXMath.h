@@ -223,8 +223,8 @@
 
 #endif // _XM_ARM_NEON_INTRINSICS_ && !_XM_NO_INTRINSICS_
 
-#include "math/Quaternion.h"
-#include "math/Vector.h"
+#include "ncmath/Quaternion.h"
+#include "ncmath/Vector.h"
 
 namespace DirectX
 {
