@@ -440,7 +440,7 @@ inline XMVECTOR XM_CALLCONV XMQuaternionSquadV
 }
 
 //------------------------------------------------------------------------------
-_Use_decl_annotations_
+
 inline void XM_CALLCONV XMQuaternionSquadSetup
 (
     XMVECTOR* pA,
@@ -903,7 +903,7 @@ inline XMVECTOR XM_CALLCONV XMQuaternionRotationMatrix(FXMMATRIX M) noexcept
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
-_Use_decl_annotations_
+
 inline void XM_CALLCONV XMQuaternionToAxisAngle
 (
     XMVECTOR* pAxis,
@@ -1136,7 +1136,7 @@ inline XMVECTOR XM_CALLCONV XMPlaneIntersectLine
 }
 
 //------------------------------------------------------------------------------
-_Use_decl_annotations_
+
 inline void XM_CALLCONV XMPlaneIntersectPlane
 (
     XMVECTOR* pLinePoint1,
@@ -1192,7 +1192,7 @@ inline XMVECTOR XM_CALLCONV XMPlaneTransform
 }
 
 //------------------------------------------------------------------------------
-_Use_decl_annotations_
+
 inline XMFLOAT4* XM_CALLCONV XMPlaneTransformStream
 (
     XMFLOAT4* pOutputStream,
@@ -2260,7 +2260,7 @@ inline float XMScalarCosEst(float Value) noexcept
 
 //------------------------------------------------------------------------------
 
-_Use_decl_annotations_
+
 inline void XMScalarSinCos
 (
     float* pSin,
@@ -2312,7 +2312,7 @@ inline void XMScalarSinCos
 
 //------------------------------------------------------------------------------
 
-_Use_decl_annotations_
+
 inline void XMScalarSinCosEst
 (
     float* pSin,
